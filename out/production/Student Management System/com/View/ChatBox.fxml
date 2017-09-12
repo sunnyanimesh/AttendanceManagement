@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controler.ChatBoxController">
+   <children>
+      <BorderPane prefHeight="406.0" prefWidth="600.0">
+         <top>
+            <AnchorPane prefHeight="97.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="228.0" layoutY="24.0" prefHeight="49.0" prefWidth="198.0" text="Chat Box" textAlignment="CENTER" textFill="#3375b2">
+                     <font>
+                        <Font name="Book Antiqua" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="71.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="chatTextField" layoutX="9.0" layoutY="33.0" prefHeight="25.0" prefWidth="465.0" />
+                  <JFXButton fx:id="sendingButton" buttonType="RAISED" layoutX="517.0" layoutY="33.0" onAction="#send" ripplerFill="#9a4141" style="-fx-background-color: #82E0AA;" text="Send" />
+                  <Label fx:id="sendtolable" prefHeight="31.0" prefWidth="308.0" text="Sending to:" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <left>
+            <ScrollPane prefHeight="218.0" prefWidth="338.0" BorderPane.alignment="CENTER" fx:id="scrollPane">
+              <content>
+                <AnchorPane fx:id="chatBox" minHeight="0.0" minWidth="0.0" prefHeight="238.0" prefWidth="342.0" />
+              </content>
+            </ScrollPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ChoiceBox fx:id="userChoiceBox" layoutX="25.0" layoutY="66.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="allUserChoiceBox" layoutX="25.0" layoutY="127.0" prefWidth="150.0" />
+                  <Label fx:id="chooseUser" layoutX="25.0" layoutY="40.0" prefHeight="17.0" prefWidth="100.0" text="Choose User Type" />
+                  <Label fx:id="userList" layoutX="25.0" layoutY="102.0" prefHeight="17.0" prefWidth="86.0" text="Choose Users" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

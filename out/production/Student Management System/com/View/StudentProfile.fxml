@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="532.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controler.StudentProfileController">
+   <children>
+      <Label layoutX="68.0" layoutY="14.0" prefHeight="36.0" prefWidth="136.0" text="Student Name :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="178.0" text="Email:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="59.0" text="Branch:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="99.0" text="Semester:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="139.0" text="Gender:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="215.0" text="Address:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <JFXButton buttonType="RAISED" layoutX="120.0" layoutY="278.0" prefHeight="44.0" prefWidth="95.0" ripplerFill="#f52b2b" style="-fx-background-color: #102030;" text="BACK" textFill="#e1dcdc">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="name" layoutX="214.0" layoutY="19.0" prefHeight="27.0" prefWidth="210.0" text="name">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="branch" layoutX="214.0" layoutY="59.0" prefHeight="27.0" prefWidth="181.0" text="branch">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="sem" layoutX="214.0" layoutY="99.0" prefHeight="27.0" prefWidth="170.0" text="sem">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="gender" layoutX="214.0" layoutY="139.0" prefHeight="27.0" prefWidth="210.0" text="gender">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="mail" layoutX="214.0" layoutY="178.0" prefHeight="27.0" prefWidth="210.0" text="mail">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="address" layoutX="214.0" layoutY="215.0" prefHeight="27.0" prefWidth="210.0" text="address">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

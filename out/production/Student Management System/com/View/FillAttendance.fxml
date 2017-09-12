@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controler.FillAttendance">
+   <children>
+      <ChoiceBox fx:id="branch" layoutX="14.0" layoutY="27.0" prefHeight="25.0" prefWidth="135.0" />
+      <ChoiceBox fx:id="subject" layoutX="165.0" layoutY="27.0" prefHeight="25.0" prefWidth="128.0" />
+      <ChoiceBox fx:id="semester" layoutX="301.0" layoutY="26.0" prefHeight="25.0" prefWidth="114.0" />
+      <JFXButton fx:id="go" layoutX="431.0" layoutY="26.0" onAction="#search" prefHeight="25.0" prefWidth="40.0" text="GO" />
+      <JFXButton fx:id="submit" layoutX="425.0" layoutY="26.0" onAction="#submit" text="Submit" />
+      <TableView fx:id="table" layoutX="29.0" layoutY="72.0" prefHeight="239.0" prefWidth="470.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="29.0" layoutY="9.0" text="Branch">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="8.0" text="Subject">
+         <font>
+            <Font name="Book Antiqua Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="7.0" text="Semester">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controler.ParentRegisterController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="121.0" prefHeight="624.0" prefWidth="680.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="121.0">
+         <children>
+            <JFXTextField fx:id="name" layoutX="248.0" layoutY="51.0" promptText="Name" />
+            <JFXTextField fx:id="parentid" layoutX="248.0" layoutY="130.0" promptText="Parent Id" />
+            <DatePicker fx:id="dob" layoutX="224.0" layoutY="210.0" promptText="Date of birth" />
+            <JFXTextField fx:id="phoneno" layoutX="246.0" layoutY="339.0" promptText="Phone No." />
+            <JFXTextField fx:id="address" layoutX="246.0" layoutY="200.0" promptText="Address" />
+            <JFXButton buttonType="RAISED" layoutX="284.0" layoutY="562.0" onAction="#sumbitParent" ripplerFill="#a83c3c" style="-fx-background-color: #89ee83;" text="Submit" />
+            <JFXTextField fx:id="password" layoutX="244.0" layoutY="494.0" promptText="Password" />
+            <JFXTextField fx:id="occupation" layoutX="245.0" layoutY="395.0" promptText="Occupation" />
+            <JFXTextField fx:id="salary" layoutX="245.0" layoutY="440.0" promptText="Salary" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-43.0" prefHeight="126.0" prefWidth="680.0" style="-fx-background-color: #f88a6f;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="211.0" layoutY="46.0" text="PARENT REGISTRATION">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

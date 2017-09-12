@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="755.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controler.FacultyController">
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="344.0" prefWidth="532.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fitHeight="301.0" fitWidth="427.0" layoutX="95.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox prefHeight="373.0" prefWidth="158.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="attendanceButton" onAction="#attendance" prefHeight="67.0" prefWidth="300.0" style="-fx-border-color: #000000; -fx-border-radius: 20; -fx-background-radius: 20;" text="Fill Attendance" textFill="#252323">
+               <font>
+                  <Font name="Segoe Print" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="assignmentButton" layoutX="15.0" layoutY="15.0" onAction="#assignment" prefHeight="67.0" prefWidth="174.0" style="-fx-border-color: #000000; -fx-border-radius: 20; -fx-background-radius: 20;" text="Assignments" textFill="#252323">
+               <font>
+                  <Font name="Segoe Print" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="messageButton" onAction="#message" prefHeight="67.0" prefWidth="174.0" style="-fx-border-color: #000000; -fx-border-radius: 20; -fx-background-radius: 20;" text="Messages" textFill="#252323">
+               <font>
+                  <Font name="Segoe Print" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="profileButton" onAction="#profile" prefHeight="67.0" prefWidth="174.0" style="-fx-border-color: #000000; -fx-background-radius: 20; -fx-border-radius: 20;" text="Profile" textFill="#252323">
+               <font>
+                  <Font name="Segoe Print" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/attendance-splash.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="108.0" prefWidth="433.0">
+               <children>
+                  <Label prefHeight="106.0" prefWidth="530.0" text="Attendance Management" textFill="#286691">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="34.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
